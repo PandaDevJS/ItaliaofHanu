@@ -372,13 +372,12 @@
   transform: scale(120%);
 }
 /* Slide show */
-.slide-show {
-  display: none;
-  animation: fadeIn 0.5s ease;
+.slide-show-news {
+  animation: fadeIn 0.5s ease-in;
 }
 @keyframes fadeIn {
   from {
-    opacity: 0.4;
+    opacity: 0.2;
     transform: translateX(100px);
   }
   to {
