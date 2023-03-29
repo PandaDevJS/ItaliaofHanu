@@ -45,10 +45,30 @@
   justify-content: space-between;
   font-size: 14px;
 }
+.menu-item {
+  position: relative;
+}
 .menu-item a {
   padding: 0 8px;
   color: white;
 }
+.menu-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: width 0.3s ease-in-out;
+}
+.menu-item:hover:after {
+  width: 100%;
+}
+.menu-item:hover a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .menu-main {
   padding: 138px 0 0 192px;
 }
@@ -331,6 +351,10 @@
 .menu-item-tablet {
   background-color: white;
   padding: 24px 6px;
+  cursor: pointer;
+}
+.menu-item-tablet:hover a {
+  color: rgba(0, 0, 0, 0.5);
 }
 .menu-item-tablet:nth-child(1),
 .menu-item-tablet:nth-child(2),
@@ -342,4 +366,23 @@
 
 .menu-item-tablet a {
   text-align: center;
+}
+.image-popup:hover {
+  cursor: pointer;
+  transform: scale(120%);
+}
+/* Slide show */
+.slide-show {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0.4;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

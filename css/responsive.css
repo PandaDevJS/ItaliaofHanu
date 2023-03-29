@@ -16,9 +16,7 @@
   .menu-tablet {
     display: block;
   }
-  .menu-tablet:hover .menu-lists-tablet {
-    display: block;
-  }
+
   .sidebar-lists {
     grid-template-columns: auto auto;
   }

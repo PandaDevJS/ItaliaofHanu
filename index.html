@@ -21,7 +21,7 @@
     <div id="header">
       <div class="container">
         <div class="menu-tablet">
-          <i class="fa-solid fa-bars"></i>
+          <i id="btn-menu" class="fa-solid fa-bars"></i>
           <ul class="menu-lists-tablet">
             <li class="menu-item-tablet">
               <a href="#news">TIN TỨC - SỰ KIỆN </a>
@@ -150,7 +150,7 @@
                 >Tổng hợp tin tức, sự kiện mới nhất của Khoa Tiếng Italia
               </text>
             </div>
-            <div class="main-item-content">
+            <div class="main-item-content slide-show">
               <img src="./Images/Rectangle 1703-1.png" />
               <div class="main-item-description box-shadow">
                 <h3>Tọa đàm Dịch Văn học dành cho SV định hướng</h3>
@@ -171,6 +171,58 @@
                   <button class="btn-add">Xem thêm</button>
                 </div>
               </div>
+            </div>
+            <div class="main-item-content slide-show">
+              <img src="./Images/Rectangle 1703-1.png" />
+              <div class="main-item-description box-shadow">
+                <h3>Slide 2</h3>
+                <div class="main-item-detail">
+                  <text>
+                    Sáng ngày 13/4/2022, Khoa tiếng Italia đã tổ chức buổi Tọa
+                    đàm Dịch văn học với sự tham gia của diễn giả Nguyễn Xuân
+                    Hồng - Một dịch giả có nhiều tác phẩm dịch có uy tín. Khách
+                    mời của buổi tọa đàm là dịch giả, nhà báo Nguyễn Xuân Hồng,
+                    Trưởng phòng thư kí tòa
+                  </text>
+                </div>
+                <div class="main-item-info">
+                  <div class="main-item-date">
+                    <img src="./Images/Timer-1.png" />
+                    <text> 21/10/2021</text>
+                  </div>
+                  <button class="btn-add">Xem thêm</button>
+                </div>
+              </div>
+            </div>
+            <div class="main-item-content slide-show">
+              <img src="./Images/Rectangle 1703-1.png" />
+              <div class="main-item-description box-shadow">
+                <h3>Slide 3</h3>
+                <div class="main-item-detail">
+                  <text>
+                    Sáng ngày 13/4/2022, Khoa tiếng Italia đã tổ chức buổi Tọa
+                    đàm Dịch văn học với sự tham gia của diễn giả Nguyễn Xuân
+                    Hồng - Một dịch giả có nhiều tác phẩm dịch có uy tín. Khách
+                    mời của buổi tọa đàm là dịch giả, nhà báo Nguyễn Xuân Hồng,
+                    Trưởng phòng thư kí tòa
+                  </text>
+                </div>
+                <div class="main-item-info">
+                  <div class="main-item-date">
+                    <img src="./Images/Timer-1.png" />
+                    <text> 21/10/2021</text>
+                  </div>
+                  <button class="btn-add">Xem thêm</button>
+                </div>
+              </div>
+            </div>
+            <div class="main-item-change pt-right">
+              <button onclick="plusSlides(-1)">
+                <img src="./Images/button prev.png" />
+              </button>
+              <button onclick="plusSlides(1)">
+                <img src="./Images/button next.png" />
+              </button>
             </div>
           </div>
         </div>
@@ -348,19 +400,19 @@
           </div>
           <div class="main-item-content">
             <div class="item-image">
-              <div class="item-image-1 item-pd">
+              <div class="item-image-1 item-pd image-popup">
                 <img src="./Images/Rectangle 1712.png" />
               </div>
-              <div class="item-image-2 item-pd">
+              <div class="item-image-2 item-pd image-popup">
                 <img src="./Images/Rectangle 1715.png" />
               </div>
-              <div class="item-image-3 item-pd">
+              <div class="item-image-3 item-pd image-popup">
                 <img src="./Images/Rectangle 1713.png" />
               </div>
-              <div class="item-image-4 item-pd">
+              <div class="item-image-4 item-pd image-popup">
                 <img src="./Images/Rectangle 1716.png" />
               </div>
-              <div class="item-image-5 item-pd">
+              <div class="item-image-5 item-pd image-popup">
                 <img src="./Images/Rectangle 1717.png" />
               </div>
             </div>
@@ -418,5 +470,51 @@
         </div>
       </div>
     </div>
+    <script>
+      const btnMenu = document.getElementById("btn-menu");
+      const showMenu = document.querySelector(".menu-lists-tablet");
+      const hiddenMenu = document.querySelectorAll(".menu-item-tablet");
+      let show = false;
+      const showMenuTablet = () => {
+        if (!show) {
+          showMenu.style.display = "block";
+          show = true;
+        } else {
+          showMenu.style.display = "none";
+          show = false;
+        }
+      };
+      const hiddenMenuTablet = () => {
+        showMenu.style.display = "none";
+      };
+      btnMenu.addEventListener("click", showMenuTablet);
+      hiddenMenu.forEach((item) => {
+        item.addEventListener("click", hiddenMenuTablet);
+      });
+      // Slide show
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.querySelectorAll(".slide-show");
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "flex";
+      }
+    </script>
   </body>
 </html>
