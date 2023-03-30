@@ -1,7 +1,7 @@
 #header {
   position: relative;
   padding: 24px;
-  background: url("./Images/Ellipse\ 70.png"), url("./Images/Ellipse\ 70.png"),
+  /* background: url("./Images/Ellipse\ 70.png"), url("./Images/Ellipse\ 70.png"),
     url("./Images/Ellipse\ 70.png"), url("./Images/Ellipse\ 66.png"),
     url("./Images/Ellipse\ 66.png"), url("./Images/Ellipse\ 66.png"),
     url("./Images/Group\ 5.png"), url("./Images/Rectangle\ 1703-2.png"),
@@ -12,7 +12,11 @@
   background-repeat: no-repeat;
   background-position: top 25% left 5%, top 60% left 50%, top 55% left 95%,
     top 50% left 90%, top 15% left 55%, top left 20%, center top, center -100px,
-    center -100px, center -100px;
+    center -100px, center -100px; */
+  background: url("./Images/headercanva.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 768px;
 }
 .menu-tablet {
   display: none;
@@ -161,7 +165,7 @@
 .main-item-content {
   display: flex;
   margin: 48px 0;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 .main-item-description {
   padding: 32px;
@@ -296,14 +300,18 @@
 /* footer */
 
 #footer {
-  background: url("./Images/Ellipse\ 69.png"), url("./Images/Ellipse\ 69.png"),
+  /* background: url("./Images/Ellipse\ 69.png"), url("./Images/Ellipse\ 69.png"),
     url("./Images/Ellipse\ 69.png"), url("./Images/Rectangle\ 1725.png"),
     url("./Images/Rectangle\ 1724.png"), url("./Images/Rectangle\ 1723.png");
   background-size: auto, auto, auto, 100% 100%, 100% 100%, 100% 100%;
   height: 110vh;
   background-repeat: no-repeat;
   background-position: top 30% left 5%, top 90% left 35%, top 45% left 90%,
-    0 70px, 0 70px, 0 10px;
+    0 70px, 0 70px, 0 10px; */
+  background: url("./Images/footer.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 768px;
 }
 .footer-container {
   transform: translateY(286px);
@@ -335,8 +343,8 @@
 .menu-tablet {
   position: relative;
 }
-.menu-tablet i {
-  font-size: 40px;
+.menu-tablet-main > i {
+  font-size: 32px;
   color: white;
   cursor: pointer;
   background-color: rgba(144, 235, 182, 0.5);

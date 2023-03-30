@@ -16,6 +16,41 @@
   .menu-tablet {
     display: block;
   }
+  .menu-tablet-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-tablet-search {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 48px;
+    justify-content: space-between;
+  }
+  .menu-tablet-search input {
+    width: 100%;
+    font-size: 20px;
+    outline: none;
+  }
+  .menu-tablet-search button {
+    cursor: pointer;
+    border-left: 1px solid #ccc;
+    padding: 0 10px;
+    color: #ccc;
+    height: 100%;
+    background-color: transparent;
+  }
+  .menu-tablet-search i {
+    font-size: 30px;
+    background-color: transparent;
+  }
+  .menu-tablet-search button:hover {
+    color: rgba(204, 204, 240, 0.7);
+  }
 
   .sidebar-lists {
     grid-template-columns: auto auto;

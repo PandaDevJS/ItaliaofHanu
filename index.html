@@ -21,7 +21,15 @@
     <div id="header">
       <div class="container">
         <div class="menu-tablet">
-          <i id="btn-menu" class="fa-solid fa-bars"></i>
+          <div class="menu-tablet-main">
+            <i id="btn-menu" class="fa-solid fa-bars"></i>
+            <div class="menu-tablet-search">
+              <input type="text" />
+              <button>
+                <i class="fas fa-regular fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
           <ul class="menu-lists-tablet">
             <li class="menu-item-tablet">
               <a href="#news">TIN TỨC - SỰ KIỆN </a>
@@ -445,9 +453,9 @@
               >Góc chia sẻ về những trải nghiệm của CBGV, SV Khoa Tiếng Italia
             </text>
           </div>
-          <div class="main-item-content carousel-wraper">
-            <div class="bal carousel-list slide-sharing-main">
-              <div class="item-shares carousel-list slide-sharing-main">
+          <div class="carousel-wraper">
+            <div class="main-item-content carousel-list slide-sharing-main">
+              <div class="item-shares">
                 <div class="item-share slide-sharing carousel-item-small">
                   <div class="item-share-wrap box-shadow">
                     <div class="item-share-des">
@@ -467,15 +475,18 @@
                 <div class="item-share slide-sharing carousel-item-small">
                   <div class="item-share-wrap box-shadow">
                     <div class="item-share-des">
-                      <h5>Đam mê quảng bá văn hóa Việt của nữ du học sinh Ý</h5>
+                      <h5>
+                        Nữ du học sinh Việt xinh đẹp, đạt điểm gần tuyệt đối
+                      </h5>
                       <text>
-                        Chia sẻ về hành trình du học của mình, Vân cho biết: "Em
-                        không có ý định du học ngay từ đầu, mãi đến hè năm lớp
-                        10 lên lớp 11 em mới bắt đầu nhen nhóm ý tưởng</text
+                        Trước khi đi du học, Linh Trang là niềm tự hào của gia
+                        đình khi luôn đạt danh hiệu học sinh giỏi 12 năm liên
+                        tiếp, ngoài ra, cô nàng còn từng là thành viên tích
+                        cực</text
                       >
                     </div>
                     <div class="item-share-avatar">
-                      <img src="./Images/Ellipse 77-1.png" />
+                      <img src="./Images/Ellipse 76-1.png" />
                     </div>
                   </div>
                 </div>
@@ -574,7 +585,7 @@
                   <img src="./Images/Rectangle 1717.png" />
                 </div>
               </div>
-              <div class="item-image carousel-item">
+              <div class="item-image slide-gallery carousel-item">
                 <div class="item-image-1 item-pd image-popup">
                   <img src="./Images/Rectangle 1712.png" />
                 </div>
@@ -591,7 +602,24 @@
                   <img src="./Images/Rectangle 1717.png" />
                 </div>
               </div>
-              <div class="item-image carousel-item">
+              <div class="item-image slide-gallery carousel-item">
+                <div class="item-image-1 item-pd image-popup">
+                  <img src="./Images/Rectangle 1712.png" />
+                </div>
+                <div class="item-image-2 item-pd image-popup">
+                  <img src="./Images/Rectangle 1715.png" />
+                </div>
+                <div class="item-image-3 item-pd image-popup">
+                  <img src="./Images/Rectangle 1713.png" />
+                </div>
+                <div class="item-image-4 item-pd image-popup">
+                  <img src="./Images/Rectangle 1716.png" />
+                </div>
+                <div class="item-image-5 item-pd image-popup">
+                  <img src="./Images/Rectangle 1717.png" />
+                </div>
+              </div>
+              <div class="item-image slide-gallery carousel-item">
                 <div class="item-image-1 item-pd image-popup">
                   <img src="./Images/Rectangle 1712.png" />
                 </div>
@@ -694,6 +722,7 @@
       const slidesNews = document.querySelectorAll(".slide-news");
       let curSlideNews = 0;
       let positionNews = slidesNews[0].offsetWidth;
+      console.log(positionNews);
       const nextSlideNews = document.querySelector(".next-btn-news");
       let maxSlideNews = slidesNews.length - 1;
       nextSlideNews.addEventListener("click", function () {
@@ -771,7 +800,8 @@
         slide.style.transform = `translateX(${-position * curSlide}px)`;
       });
       // Sharing - slide
-      const slideSharing = document.querySelector(".bal");
+      const slideSharing = document.querySelector(".slide-sharing-main");
+      console.log(slideSharing);
       const slidesSharing = document.querySelectorAll(".slide-sharing");
       let curSlideSharing = 0;
       let positionSharing = slidesSharing[0].offsetWidth;
@@ -802,7 +832,7 @@
       const slideGallery = document.querySelector(".slide-gallery-main");
 
       const slidesGallery = document.querySelectorAll(".slide-gallery");
-
+      console.log(slidesGallery.length);
       let curSlideGallery = 0;
       let positionGallery = slidesGallery[0].offsetWidth;
       const nextBtnGallery = document.querySelector(".next-btn-gallery");
@@ -823,6 +853,8 @@
         } else {
           curSlideGallery--;
         }
+        console.log("prev");
+
         slideGallery.style.transform = `translateX(${
           -positionGallery * curSlideGallery
         }px)`;
