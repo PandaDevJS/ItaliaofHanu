@@ -247,16 +247,18 @@
 }
 /*  sharing */
 .item-shares {
-  margin: 48px -24px 0;
+  margin: 62px -20px 48px;
   display: flex;
 }
 .item-share {
-  margin: 12px 24px;
-  width: 33.33%;
+  flex: 1 0 calc(100% / 3);
   height: 100%;
+}
+.item-share-wrap {
   padding: 100px 45px 100px 24px;
   position: relative;
-
+  margin: 12px 24px;
+  height: 100%;
   border-top-right-radius: 10%;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -279,7 +281,7 @@
 .item-image {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
+  /* margin: 0 -10px; */
 }
 .item-pd {
   padding: 10px 10px;
@@ -377,11 +379,30 @@
 }
 @keyframes fadeIn {
   from {
-    opacity: 0.2;
-    transform: translateX(100px);
+    opacity: 0;
+    transform: translateX(1200px);
   }
   to {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+/* 
+carousel
+*/
+.carousel-wraper {
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-list {
+  display: flex;
+  transition: transform 0.4s linear;
+}
+.carousel-item {
+  width: 100%;
+  flex: 1 0 100%;
+}
+.carousel-item-small {
+  width: 100%;
+  flex: 1 0 calc(100% / 3);
 }
