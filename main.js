@@ -6,6 +6,7 @@ let show = false;
 const showMenuTablet = () => {
   if (!show) {
     showMenu.style.display = "block";
+    s;
     show = true;
   } else {
     showMenu.style.display = "none";
@@ -23,11 +24,14 @@ hiddenMenu.forEach((item) => {
 const slideNews = document.querySelector(".slide-news-main");
 const slidesNews = document.querySelectorAll(".slide-news");
 let curSlideNews = 0;
-let positionNews = slidesNews[0].offsetWidth;
 const nextSlideNews = document.querySelector(".next-btn-news");
 let maxSlideNews = slidesNews.length - 1;
 nextSlideNews.addEventListener("click", function () {
+  let positionNews = slidesNews[0].offsetWidth;
+  prevSlideNews.style.opacity = "1";
   if (curSlideNews === maxSlideNews) {
+    nextSlideNews.style.opacity = "0.5";
+
     return;
   } else {
     curSlideNews++;
@@ -37,7 +41,12 @@ nextSlideNews.addEventListener("click", function () {
 // select prev slide button
 const prevSlideNews = document.querySelector(".prev-btn-news");
 prevSlideNews.addEventListener("click", function () {
+  let positionNews = slidesNews[0].offsetWidth;
+  nextSlideNews.style.opacity = "1";
+
   if (curSlideNews === 0) {
+    prevSlideNews.style.opacity = "0.5";
+
     return;
   } else {
     curSlideNews--;
@@ -47,11 +56,15 @@ prevSlideNews.addEventListener("click", function () {
 // Train - slide
 const slideTrain = document.querySelector(".slide-train-main");
 const slidesTrain = document.querySelectorAll(".slide-train");
+console.log(slidesTrain.length);
 let curSlideTrain = 0;
-let positionTrain = slidesTrain[0].offsetWidth;
 const nextSlideTrain = document.querySelector(".next-btn-train");
 nextSlideTrain.addEventListener("click", () => {
+  console.log(curSlideTrain);
+  let positionTrain = slidesTrain[0].offsetWidth;
+  prevSlideTrain.style.opacity = "1";
   if (curSlideTrain === slidesTrain.length - 1) {
+    nextSlideTrain.style.opacity = "0.5";
     return;
   } else {
     curSlideTrain++;
@@ -62,7 +75,12 @@ nextSlideTrain.addEventListener("click", () => {
 });
 const prevSlideTrain = document.querySelector(".prev-btn-train");
 prevSlideTrain.addEventListener("click", () => {
+  let positionTrain = slidesTrain[0].offsetWidth;
+  nextSlideTrain.style.opacity = "1";
+
   if (curSlideTrain === 0) {
+    prevSlideTrain.style.opacity = "0.5";
+
     return;
   } else {
     curSlideTrain--;
@@ -75,11 +93,15 @@ prevSlideTrain.addEventListener("click", () => {
 const slide = document.querySelector(".slide-cooperate-main");
 const slides = document.querySelectorAll(".slide-cooperate");
 let curSlide = 0;
-let position = slides[0].offsetWidth;
 const nextSlide = document.querySelector(".next-btn-coop");
 let maxSlide = slides.length - 1;
 nextSlide.addEventListener("click", function () {
+  let position = slides[0].offsetWidth;
+  prevSlide.style.opacity = "1";
+
   if (curSlide === maxSlide) {
+    nextSlide.style.opacity = "0.5";
+
     return;
   } else {
     curSlide++;
@@ -89,7 +111,11 @@ nextSlide.addEventListener("click", function () {
 
 const prevSlide = document.querySelector(".prev-btn-coop");
 prevSlide.addEventListener("click", function () {
+  let position = slides[0].offsetWidth;
+  nextSlide.style.opacity = "1";
+
   if (curSlide === 0) {
+    prevSlide.style.opacity = "0.5";
     return;
   } else {
     curSlide--;
@@ -97,17 +123,23 @@ prevSlide.addEventListener("click", function () {
   slide.style.transform = `translateX(${-position * curSlide}px)`;
 });
 // Sharing - slide
-const slideSharing = document.querySelector(".bal");
+const slideSharing = document.querySelector(".slide-sharing-main");
+console.log(slideSharing);
 const slidesSharing = document.querySelectorAll(".slide-sharing");
 let curSlideSharing = 0;
-let positionSharing = slidesSharing[0].offsetWidth;
 const nextSlideShar = document.querySelector(".next-btn-sharing");
 nextSlideShar.addEventListener("click", () => {
+  let positionSharing = slidesSharing[0].offsetWidth;
+  prevSlideShar.style.opacity = "1";
+
   if (curSlideSharing === slidesSharing.length - 3) {
+    nextSlideShar.style.opacity = "0.5";
+
     return;
   } else {
     curSlideSharing++;
   }
+  console.log(positionSharing);
   slideSharing.style.transform = `translateX(${
     -positionSharing * curSlideSharing
   }px)`;
@@ -115,7 +147,11 @@ nextSlideShar.addEventListener("click", () => {
 
 const prevSlideShar = document.querySelector(".prev-btn-sharing");
 prevSlideShar.addEventListener("click", () => {
+  let positionSharing = slidesSharing[0].offsetWidth;
+  nextSlideShar.style.opacity = "1";
+
   if (curSlideSharing === 0) {
+    prevSlideShar.style.opacity = "0.5";
     return;
   } else {
     curSlideSharing--;
@@ -128,12 +164,14 @@ prevSlideShar.addEventListener("click", () => {
 const slideGallery = document.querySelector(".slide-gallery-main");
 
 const slidesGallery = document.querySelectorAll(".slide-gallery");
-console.log(slidesGallery.length);
+
 let curSlideGallery = 0;
-let positionGallery = slidesGallery[0].offsetWidth;
 const nextBtnGallery = document.querySelector(".next-btn-gallery");
 nextBtnGallery.addEventListener("click", () => {
+  let positionGallery = slidesGallery[0].offsetWidth;
+  prevBtnGallery.style.opacity = "1";
   if (curSlideGallery === slidesGallery.length - 1) {
+    nextBtnGallery.style.opacity = "0.5";
     return;
   } else {
     curSlideGallery++;
@@ -144,12 +182,15 @@ nextBtnGallery.addEventListener("click", () => {
 });
 const prevBtnGallery = document.querySelector(".prev-btn-gallery");
 prevBtnGallery.addEventListener("click", () => {
+  let positionGallery = slidesGallery[0].offsetWidth;
+  nextBtnGallery.style.opacity = "1";
+
   if (curSlideGallery === 0) {
+    prevBtnGallery.style.opacity = "0.5";
     return;
   } else {
     curSlideGallery--;
   }
-  console.log("prev");
 
   slideGallery.style.transform = `translateX(${
     -positionGallery * curSlideGallery

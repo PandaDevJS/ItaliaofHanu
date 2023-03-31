@@ -1,19 +1,7 @@
 #header {
   position: relative;
   padding: 24px;
-  /* background: url("./Images/Ellipse\ 70.png"), url("./Images/Ellipse\ 70.png"),
-    url("./Images/Ellipse\ 70.png"), url("./Images/Ellipse\ 66.png"),
-    url("./Images/Ellipse\ 66.png"), url("./Images/Ellipse\ 66.png"),
-    url("./Images/Group\ 5.png"), url("./Images/Rectangle\ 1703-2.png"),
-    url("./Images/Rectangle\ 1721.png"), url("./Images/Rectangle\ 1722.png");
-  background-size: auto, auto, auto, auto, auto, auto, auto 75%, 100% 100%,
-    100% 100%, 100% 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: top 25% left 5%, top 60% left 50%, top 55% left 95%,
-    top 50% left 90%, top 15% left 55%, top left 20%, center top, center -100px,
-    center -100px, center -100px; */
-  background: url("./Images/headercanva.png");
+  background: url("../Images/headercanva.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 768px;
@@ -51,6 +39,21 @@
 }
 .menu-item {
   position: relative;
+}
+.menu-item-search {
+  display: flex;
+  align-items: center;
+}
+.menu-item-search input {
+  display: none;
+  width: 100%;
+}
+.menu-item-search button {
+  background-color: transparent;
+}
+.menu-item-search i {
+  font-size: 20px;
+  color: white;
 }
 .menu-item a {
   padding: 0 8px;
@@ -137,11 +140,14 @@
     url("./Images/Ellipse\ 77.png"), url("./Images/Ellipse\ 77.png"),
     url("./Images/Ellipse\ 77.png"), url("./Images/Ellipse\ 77.png"),
     url("./Images/Ellipse\ 77.png"), url("./Images/Ellipse\ 87.png"),
-    url("./Images/Ellipse\ 88.png"), url("./Images/Ellipse\ 77.png");
+    url("./Images/Ellipse\ 88.png"), url("./Images/Ellipse\ 77.png"),
+    url("./Images/Ellipse\ 77.png"), url("./Images/Ellipse\ 77.png"),
+    url("./Images/Ellipse\ 77.png"), url("./Images/Ellipse\ 77.png");
   background-repeat: no-repeat;
-  background-position: 400px 46px, 1350px 250px, 800px 640px, 40px 880px,
-    805px 1260px, 450px 2800px, 1350px 3000px, 60px 3310px, 0px 3280px,
-    1230px 3200px, 1350px 3100px;
+  background-position: 400px 46px, 2350px 250px, 800px 640px, 40px 880px,
+    805px 1260px, 450px 2800px, 1350px 3000px, 60px 3490px, 0px 3450px,
+    right 3330px, 1920px 3275px, 1200px 3760px, 600px 4398px, 1920px 7275px,
+    1500px 4712px;
 }
 
 .main-item {
@@ -161,7 +167,6 @@
 .main-item-content {
   display: flex;
   margin: 48px 0;
-  /* justify-content: space-around; */
 }
 .main-item-description {
   padding: 32px;
@@ -206,7 +211,16 @@
   display: flex;
   align-items: center;
 }
-
+.responsive-img {
+  padding: 0 12px;
+  width: 100%;
+  height: auto;
+}
+/* train */
+.slide-train {
+  margin-left: -32px;
+  margin-right: 32px;
+}
 /*  research */
 .background-main-item {
   background-image: url("./Images/Rectangle\ 1707.png");
@@ -258,7 +272,6 @@
 }
 .item-share {
   flex: 1 0 calc(100% / 3);
-  /* height: 100%; */
 }
 .item-share-wrap {
   padding: 100px 45px 100px 24px;
@@ -286,9 +299,8 @@
 /*  gallery */
 .item-image {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  /* margin: 0 -10px; */
 }
 .item-pd {
   padding: 10px 0;
@@ -306,15 +318,7 @@
 /* footer */
 
 #footer {
-  /* background: url("./Images/Ellipse\ 69.png"), url("./Images/Ellipse\ 69.png"),
-    url("./Images/Ellipse\ 69.png"), url("./Images/Rectangle\ 1725.png"),
-    url("./Images/Rectangle\ 1724.png"), url("./Images/Rectangle\ 1723.png");
-  background-size: auto, auto, auto, 100% 100%, 100% 100%, 100% 100%;
-  height: 110vh;
-  background-repeat: no-repeat;
-  background-position: top 30% left 5%, top 90% left 35%, top 45% left 90%,
-    0 70px, 0 70px, 0 10px; */
-  background: url("./Images/footer.png");
+  background: url("../Images/footer.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 768px;

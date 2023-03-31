@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KHOA TIẾNG ITALIA</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./Images/Logo.png" />
-    <link rel="stylesheet" href="./CSS/base.css" />
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./CSS/responsive.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -81,8 +81,10 @@
             <li class="menu-item">
               <a href="#gallery">THƯ VIỆN ẢNH</a>
             </li>
-            <li class="">
-              <a href="#"><img src="./Images/Search.png" /></a>
+            <li class="menu-item-search">
+              <button class="btn-search">
+                <i class="fas fa-regular fa-magnifying-glass"></i>
+              </button>
             </li>
           </ul>
         </div>
@@ -160,9 +162,14 @@
             </div>
             <div class="carousel-wraper">
               <div class="slide-news-main carousel-list">
-                <div class="main-item-content slide-news carousel-item">
-                  <img src="./Images/Rectangle 1703-1.png" />
-                  <div class="main-item-description box-shadow">
+                <div
+                  class="main-item-content slide-news carousel-item box-shadow"
+                >
+                  <img
+                    class="responsive-img"
+                    src="./Images/Rectangle 1703-1.png"
+                  />
+                  <div class="main-item-description">
                     <h3>Tọa đàm Dịch Văn học dành cho SV định hướng</h3>
                     <div class="main-item-detail">
                       <text>
@@ -183,9 +190,14 @@
                   </div>
                 </div>
 
-                <div class="main-item-content slide-news carousel-item">
-                  <img src="./Images/Rectangle 1703-1.png" />
-                  <div class="main-item-description box-shadow">
+                <div
+                  class="main-item-content slide-news carousel-item box-shadow"
+                >
+                  <img
+                    class="responsive-img"
+                    src="./Images/Rectangle 1703-1.png"
+                  />
+                  <div class="main-item-description">
                     <h3>Slide 2</h3>
                     <div class="main-item-detail">
                       <text>
@@ -205,9 +217,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="main-item-content slide-news carousel-item">
-                  <img src="./Images/Rectangle 1703-1.png" />
-                  <div class="main-item-description box-shadow">
+                <div
+                  class="main-item-content slide-news carousel-item box-shadow"
+                >
+                  <img
+                    class="responsive-img"
+                    src="./Images/Rectangle 1703-1.png"
+                  />
+                  <div class="main-item-description">
                     <h3>Slide 3</h3>
                     <div class="main-item-detail">
                       <text>
@@ -252,10 +269,8 @@
             </div>
             <div class="carousel-wraper">
               <div class="slide-train-main carousel-list">
-                <div
-                  class="main-item-content slide-train carousel-item pd-lf-32"
-                >
-                  <div class="main-item-description main-item-description-2">
+                <div class="main-item-content slide-train carousel-item">
+                  <div class="main-item-description">
                     <h3>Hệ Chính quy Ngôn ngữ Italia</h3>
                     <div class="main-item-detail">
                       <text>
@@ -268,12 +283,10 @@
                       </text>
                     </div>
                   </div>
-                  <img src="./Images/Group 34.png" />
+                  <img class="responsive-img" src="./Images/Group 34.png" />
                 </div>
-                <div
-                  class="main-item-content slide-train carousel-item pd-lf-32"
-                >
-                  <div class="main-item-description main-item-description-2">
+                <div class="main-item-content slide-train carousel-item">
+                  <div class="main-item-description">
                     <h3>Hệ Chính quy Ngôn ngữ Italia</h3>
                     <div class="main-item-detail">
                       <text>
@@ -286,12 +299,10 @@
                       </text>
                     </div>
                   </div>
-                  <img src="./Images/Group 34.png" />
+                  <img class="responsive-img" src="./Images/Group 34.png" />
                 </div>
-                <div
-                  class="main-item-content slide-train carousel-item pd-lf-32"
-                >
-                  <div class="main-item-description main-item-description-2">
+                <div class="main-item-content slide-train carousel-item">
+                  <div class="main-item-description">
                     <h3>Hệ Chính quy Ngôn ngữ Italia</h3>
                     <div class="main-item-detail">
                       <text>
@@ -304,7 +315,7 @@
                       </text>
                     </div>
                   </div>
-                  <img src="./Images/Group 34.png" />
+                  <img class="responsive-img" src="./Images/Group 34.png" />
                 </div>
               </div>
             </div>
@@ -333,14 +344,14 @@
           <div class="main-item-content">
             <div class="main-item-research">
               <div class="item-research">
-                <img src="./Images/Rectangle 1733.png" />
+                <img class="responsive-img" src="./Images/Rectangle 1733.png" />
                 <h5>Nghiên cứu khoa học Giảng viên</h5>
                 <div class="main-item-info pd-top">
                   <button class="btn-add">Xem thêm</button>
                 </div>
               </div>
               <div class="item-research">
-                <img src="./Images/Rectangle 1733.png" />
+                <img class="responsive-img" src="./Images/Rectangle 1733.png" />
                 <h5>Nghiên cứu khoa học Sinh viên</h5>
                 <div class="main-item-info pd-top">
                   <button class="btn-add">Xem thêm</button>
@@ -365,8 +376,15 @@
             <div class="carousel-list slide-cooperate-main">
               <div class="main-item-content carousel-item slide-cooperate">
                 <div class="grid-2">
-                  <img src="./Images/Rectangle 1688.png" />
-                  <img class="pd-left" src="./Images/Rectangle 1689.png" />
+                  <img
+                    class="img-cooperate"
+                    src="./Images/Rectangle 1688.png"
+                  />
+                  <img
+                    class="img-cooperate"
+                    class="pd-left"
+                    src="./Images/Rectangle 1689.png"
+                  />
                 </div>
                 <div class="main-item-description pd-right pd-lf-32">
                   <h3>Call for papers Convego Internazionale ItaHanu</h3>
@@ -379,7 +397,7 @@
                       di Hanoi (HANU) intende organizzare
                     </text>
                   </div>
-                  <div class="main-item-info">
+                  <div class="main-item-info pd-top">
                     <div class="main-item-date">
                       <img src="./Images/Timer-1.png" />
                       <text> 21/10/2021</text>
@@ -390,8 +408,15 @@
               </div>
               <div class="main-item-content carousel-item slide-cooperate">
                 <div class="grid-2">
-                  <img src="./Images/Rectangle 1688.png" />
-                  <img class="pd-left" src="./Images/Rectangle 1689.png" />
+                  <img
+                    class="img-cooperate"
+                    src="./Images/Rectangle 1688.png"
+                  />
+                  <img
+                    class="img-cooperate"
+                    class="pd-left"
+                    src="./Images/Rectangle 1689.png"
+                  />
                 </div>
                 <div class="main-item-description pd-right pd-lf-32">
                   <h3>Call for papers Convego Internazionale ItaHanu</h3>
@@ -404,7 +429,7 @@
                       down bellow.
                     </text>
                   </div>
-                  <div class="main-item-info">
+                  <div class="main-item-info pd-top">
                     <div class="main-item-date">
                       <img src="./Images/Timer-1.png" />
                       <text> 21/10/2021</text>
@@ -415,8 +440,15 @@
               </div>
               <div class="main-item-content carousel-item slide-cooperate">
                 <div class="grid-2">
-                  <img src="./Images/Rectangle 1688.png" />
-                  <img class="pd-left" src="./Images/Rectangle 1689.png" />
+                  <img
+                    class="img-cooperate"
+                    src="./Images/Rectangle 1688.png"
+                  />
+                  <img
+                    class="img-cooperate"
+                    class="pd-left"
+                    src="./Images/Rectangle 1689.png"
+                  />
                 </div>
                 <div class="main-item-description pd-right pd-lf-32">
                   <h3>Call for papers Convego Internazionale ItaHanu</h3>
@@ -429,7 +461,7 @@
                       down bellow.
                     </text>
                   </div>
-                  <div class="main-item-info">
+                  <div class="main-item-info pd-top">
                     <div class="main-item-date">
                       <img src="./Images/Timer-1.png" />
                       <text> 21/10/2021</text>
@@ -576,70 +608,36 @@
             >
               <div class="item-image slide-gallery carousel-item">
                 <div class="item-image-1 item-pd image-popup">
-                  <img src="./Images/Rectangle 1712.png" />
+                  <img class="img-gallery" src="./Images/Rectangle 1712.png" />
                 </div>
                 <div class="item-image-2 item-pd image-popup">
-                  <img src="./Images/Rectangle 1715.png" />
+                  <img class="img-gallery" src="./Images/Rectangle 1715.png" />
                 </div>
                 <div class="item-image-3 item-pd image-popup">
-                  <img src="./Images/Rectangle 1713.png" />
+                  <img class="img-gallery" src="./Images/Rectangle 1713.png" />
                 </div>
                 <div class="item-image-4 item-pd image-popup">
-                  <img src="./Images/Rectangle 1716.png" />
+                  <img class="img-gallery" src="./Images/Rectangle 1716.png" />
                 </div>
                 <div class="item-image-5 item-pd image-popup">
-                  <img src="./Images/Rectangle 1717.png" />
+                  <img class="img-gallery" src="./Images/Rectangle 1717.png" />
                 </div>
               </div>
               <div class="item-image slide-gallery carousel-item">
                 <div class="item-image-1 item-pd image-popup">
-                  <img src="./Images/Rectangle 1712.png" />
+                  <img class="img-gallery" src="./Images/Rectangle 1712.png" />
                 </div>
                 <div class="item-image-2 item-pd image-popup">
-                  <img src="./Images/Rectangle 1715.png" />
+                  <img class="img-gallery" src="./Images/Rectangle 1715.png" />
                 </div>
                 <div class="item-image-3 item-pd image-popup">
-                  <img src="./Images/Rectangle 1713.png" />
+                  <img class="img-gallery" src="./Images/Rectangle 1713.png" />
                 </div>
                 <div class="item-image-4 item-pd image-popup">
-                  <img src="./Images/Rectangle 1716.png" />
+                  <img class="img-gallery" src="./Images/Rectangle 1716.png" />
                 </div>
                 <div class="item-image-5 item-pd image-popup">
-                  <img src="./Images/Rectangle 1717.png" />
-                </div>
-              </div>
-              <div class="item-image slide-gallery carousel-item">
-                <div class="item-image-1 item-pd image-popup">
-                  <img src="./Images/Rectangle 1712.png" />
-                </div>
-                <div class="item-image-2 item-pd image-popup">
-                  <img src="./Images/Rectangle 1715.png" />
-                </div>
-                <div class="item-image-3 item-pd image-popup">
-                  <img src="./Images/Rectangle 1713.png" />
-                </div>
-                <div class="item-image-4 item-pd image-popup">
-                  <img src="./Images/Rectangle 1716.png" />
-                </div>
-                <div class="item-image-5 item-pd image-popup">
-                  <img src="./Images/Rectangle 1717.png" />
-                </div>
-              </div>
-              <div class="item-image slide-gallery carousel-item">
-                <div class="item-image-1 item-pd image-popup">
-                  <img src="./Images/Rectangle 1712.png" />
-                </div>
-                <div class="item-image-2 item-pd image-popup">
-                  <img src="./Images/Rectangle 1715.png" />
-                </div>
-                <div class="item-image-3 item-pd image-popup">
-                  <img src="./Images/Rectangle 1713.png" />
-                </div>
-                <div class="item-image-4 item-pd image-popup">
-                  <img src="./Images/Rectangle 1716.png" />
-                </div>
-                <div class="item-image-5 item-pd image-popup">
-                  <img src="./Images/Rectangle 1717.png" />
+                  <img class="img-gallery" src="./Images/Rectangle 1717.png" />
                 </div>
               </div>
             </div>
@@ -701,185 +699,6 @@
         </div>
       </div>
     </div>
-    <script>
-      // popup menu-tablet
-      const btnMenu = document.getElementById("btn-menu");
-      const showMenu = document.querySelector(".menu-lists-tablet");
-      const hiddenMenu = document.querySelectorAll(".menu-item-tablet");
-      let show = false;
-      const showMenuTablet = () => {
-        if (!show) {
-          showMenu.style.display = "block";
-          show = true;
-        } else {
-          showMenu.style.display = "none";
-          show = false;
-        }
-      };
-      const hiddenMenuTablet = () => {
-        showMenu.style.display = "none";
-      };
-      btnMenu.addEventListener("click", showMenuTablet);
-      hiddenMenu.forEach((item) => {
-        item.addEventListener("click", hiddenMenuTablet);
-      });
-      // News - Slide
-      const slideNews = document.querySelector(".slide-news-main");
-      const slidesNews = document.querySelectorAll(".slide-news");
-      let curSlideNews = 0;
-      const nextSlideNews = document.querySelector(".next-btn-news");
-      let maxSlideNews = slidesNews.length - 1;
-      nextSlideNews.addEventListener("click", function () {
-        let positionNews = slidesNews[0].offsetWidth;
-
-        if (curSlideNews === maxSlideNews) {
-          return;
-        } else {
-          curSlideNews++;
-        }
-        slideNews.style.transform = `translateX(${
-          -positionNews * curSlideNews
-        }px)`;
-      });
-      // select prev slide button
-      const prevSlideNews = document.querySelector(".prev-btn-news");
-      prevSlideNews.addEventListener("click", function () {
-        let positionNews = slidesNews[0].offsetWidth;
-
-        if (curSlideNews === 0) {
-          return;
-        } else {
-          curSlideNews--;
-        }
-        slideNews.style.transform = `translateX(${
-          -positionNews * curSlideNews
-        }px)`;
-      });
-      // Train - slide
-      const slideTrain = document.querySelector(".slide-train-main");
-      const slidesTrain = document.querySelectorAll(".slide-train");
-      let curSlideTrain = 0;
-      const nextSlideTrain = document.querySelector(".next-btn-train");
-      nextSlideTrain.addEventListener("click", () => {
-        let positionTrain = slidesTrain[0].offsetWidth;
-
-        if (curSlideTrain === slidesTrain.length - 1) {
-          return;
-        } else {
-          curSlideTrain++;
-        }
-        slideTrain.style.transform = `translateX(${
-          -positionTrain * curSlideTrain
-        }px)`;
-      });
-      const prevSlideTrain = document.querySelector(".prev-btn-train");
-      prevSlideTrain.addEventListener("click", () => {
-        let positionTrain = slidesTrain[0].offsetWidth;
-
-        if (curSlideTrain === 0) {
-          return;
-        } else {
-          curSlideTrain--;
-        }
-        slideTrain.style.transform = `translateX(${
-          -positionTrain * curSlideTrain
-        }px)`;
-      });
-      // Cooperate-slide
-      const slide = document.querySelector(".slide-cooperate-main");
-      const slides = document.querySelectorAll(".slide-cooperate");
-      let curSlide = 0;
-      const nextSlide = document.querySelector(".next-btn-coop");
-      let maxSlide = slides.length - 1;
-      nextSlide.addEventListener("click", function () {
-        let position = slides[0].offsetWidth;
-
-        if (curSlide === maxSlide) {
-          return;
-        } else {
-          curSlide++;
-        }
-        slide.style.transform = `translateX(${-position * curSlide}px)`;
-      });
-
-      const prevSlide = document.querySelector(".prev-btn-coop");
-      prevSlide.addEventListener("click", function () {
-        let position = slides[0].offsetWidth;
-
-        if (curSlide === 0) {
-          return;
-        } else {
-          curSlide--;
-        }
-        slide.style.transform = `translateX(${-position * curSlide}px)`;
-      });
-      // Sharing - slide
-      const slideSharing = document.querySelector(".slide-sharing-main");
-      console.log(slideSharing);
-      const slidesSharing = document.querySelectorAll(".slide-sharing");
-      let curSlideSharing = 0;
-      const nextSlideShar = document.querySelector(".next-btn-sharing");
-      nextSlideShar.addEventListener("click", () => {
-        let positionSharing = slidesSharing[0].offsetWidth;
-
-        if (curSlideSharing === slidesSharing.length - 3) {
-          return;
-        } else {
-          curSlideSharing++;
-        }
-        console.log(positionSharing);
-        slideSharing.style.transform = `translateX(${
-          -positionSharing * curSlideSharing
-        }px)`;
-      });
-
-      const prevSlideShar = document.querySelector(".prev-btn-sharing");
-      prevSlideShar.addEventListener("click", () => {
-        let positionSharing = slidesSharing[0].offsetWidth;
-
-        if (curSlideSharing === 0) {
-          return;
-        } else {
-          curSlideSharing--;
-        }
-        slideSharing.style.transform = `translateX(${
-          -positionSharing * curSlideSharing
-        }px)`;
-      });
-      // Gallery-slide
-      const slideGallery = document.querySelector(".slide-gallery-main");
-
-      const slidesGallery = document.querySelectorAll(".slide-gallery");
-      console.log(slidesGallery.length);
-      let curSlideGallery = 0;
-      const nextBtnGallery = document.querySelector(".next-btn-gallery");
-      nextBtnGallery.addEventListener("click", () => {
-        let positionGallery = slidesGallery[0].offsetWidth;
-
-        if (curSlideGallery === slidesGallery.length - 1) {
-          return;
-        } else {
-          curSlideGallery++;
-        }
-        slideGallery.style.transform = `translateX(${
-          -positionGallery * curSlideGallery
-        }px)`;
-      });
-      const prevBtnGallery = document.querySelector(".prev-btn-gallery");
-      prevBtnGallery.addEventListener("click", () => {
-        let positionGallery = slidesGallery[0].offsetWidth;
-
-        if (curSlideGallery === 0) {
-          return;
-        } else {
-          curSlideGallery--;
-        }
-        console.log("prev");
-
-        slideGallery.style.transform = `translateX(${
-          -positionGallery * curSlideGallery
-        }px)`;
-      });
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>
