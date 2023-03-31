@@ -182,6 +182,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="main-item-content slide-news carousel-item">
                   <img src="./Images/Rectangle 1703-1.png" />
                   <div class="main-item-description box-shadow">
@@ -251,7 +252,9 @@
             </div>
             <div class="carousel-wraper">
               <div class="slide-train-main carousel-list">
-                <div class="main-item-content slide-train carousel-item">
+                <div
+                  class="main-item-content slide-train carousel-item pd-lf-32"
+                >
                   <div class="main-item-description main-item-description-2">
                     <h3>Hệ Chính quy Ngôn ngữ Italia</h3>
                     <div class="main-item-detail">
@@ -267,7 +270,9 @@
                   </div>
                   <img src="./Images/Group 34.png" />
                 </div>
-                <div class="main-item-content slide-train carousel-item">
+                <div
+                  class="main-item-content slide-train carousel-item pd-lf-32"
+                >
                   <div class="main-item-description main-item-description-2">
                     <h3>Hệ Chính quy Ngôn ngữ Italia</h3>
                     <div class="main-item-detail">
@@ -283,7 +288,9 @@
                   </div>
                   <img src="./Images/Group 34.png" />
                 </div>
-                <div class="main-item-content slide-train carousel-item">
+                <div
+                  class="main-item-content slide-train carousel-item pd-lf-32"
+                >
                   <div class="main-item-description main-item-description-2">
                     <h3>Hệ Chính quy Ngôn ngữ Italia</h3>
                     <div class="main-item-detail">
@@ -361,7 +368,7 @@
                   <img src="./Images/Rectangle 1688.png" />
                   <img class="pd-left" src="./Images/Rectangle 1689.png" />
                 </div>
-                <div class="main-item-description pd-right">
+                <div class="main-item-description pd-right pd-lf-32">
                   <h3>Call for papers Convego Internazionale ItaHanu</h3>
                   <div class="main-item-detail">
                     <text>
@@ -386,7 +393,7 @@
                   <img src="./Images/Rectangle 1688.png" />
                   <img class="pd-left" src="./Images/Rectangle 1689.png" />
                 </div>
-                <div class="main-item-description pd-right">
+                <div class="main-item-description pd-right pd-lf-32">
                   <h3>Call for papers Convego Internazionale ItaHanu</h3>
                   <div class="main-item-detail">
                     <text>
@@ -411,7 +418,7 @@
                   <img src="./Images/Rectangle 1688.png" />
                   <img class="pd-left" src="./Images/Rectangle 1689.png" />
                 </div>
-                <div class="main-item-description pd-right">
+                <div class="main-item-description pd-right pd-lf-32">
                   <h3>Call for papers Convego Internazionale ItaHanu</h3>
                   <div class="main-item-detail">
                     <text>
@@ -475,18 +482,15 @@
                 <div class="item-share slide-sharing carousel-item-small">
                   <div class="item-share-wrap box-shadow">
                     <div class="item-share-des">
-                      <h5>
-                        Nữ du học sinh Việt xinh đẹp, đạt điểm gần tuyệt đối
-                      </h5>
+                      <h5>Đam mê quảng bá văn hóa Việt của nữ du học sinh Ý</h5>
                       <text>
-                        Trước khi đi du học, Linh Trang là niềm tự hào của gia
-                        đình khi luôn đạt danh hiệu học sinh giỏi 12 năm liên
-                        tiếp, ngoài ra, cô nàng còn từng là thành viên tích
-                        cực</text
+                        Chia sẻ về hành trình du học của mình, Vân cho biết: "Em
+                        không có ý định du học ngay từ đầu, mãi đến hè năm lớp
+                        10 lên lớp 11 em mới bắt đầu nhen nhóm ý tưởng</text
                       >
                     </div>
                     <div class="item-share-avatar">
-                      <img src="./Images/Ellipse 76-1.png" />
+                      <img src="./Images/Ellipse 77-1.png" />
                     </div>
                   </div>
                 </div>
@@ -567,7 +571,9 @@
             <text>Khoa Tiếng Italia dưới góc nhìn của CBGV, SV</text>
           </div>
           <div class="carousel-wraper">
-            <div class="main-item-content slide-gallery-main carousel-list">
+            <div
+              class="main-item-content slide-gallery-main carousel-list main-item-gallery"
+            >
               <div class="item-image slide-gallery carousel-item">
                 <div class="item-image-1 item-pd image-popup">
                   <img src="./Images/Rectangle 1712.png" />
@@ -721,11 +727,11 @@
       const slideNews = document.querySelector(".slide-news-main");
       const slidesNews = document.querySelectorAll(".slide-news");
       let curSlideNews = 0;
-      let positionNews = slidesNews[0].offsetWidth;
-      console.log(positionNews);
       const nextSlideNews = document.querySelector(".next-btn-news");
       let maxSlideNews = slidesNews.length - 1;
       nextSlideNews.addEventListener("click", function () {
+        let positionNews = slidesNews[0].offsetWidth;
+
         if (curSlideNews === maxSlideNews) {
           return;
         } else {
@@ -738,6 +744,8 @@
       // select prev slide button
       const prevSlideNews = document.querySelector(".prev-btn-news");
       prevSlideNews.addEventListener("click", function () {
+        let positionNews = slidesNews[0].offsetWidth;
+
         if (curSlideNews === 0) {
           return;
         } else {
@@ -751,9 +759,10 @@
       const slideTrain = document.querySelector(".slide-train-main");
       const slidesTrain = document.querySelectorAll(".slide-train");
       let curSlideTrain = 0;
-      let positionTrain = slidesTrain[0].offsetWidth;
       const nextSlideTrain = document.querySelector(".next-btn-train");
       nextSlideTrain.addEventListener("click", () => {
+        let positionTrain = slidesTrain[0].offsetWidth;
+
         if (curSlideTrain === slidesTrain.length - 1) {
           return;
         } else {
@@ -765,6 +774,8 @@
       });
       const prevSlideTrain = document.querySelector(".prev-btn-train");
       prevSlideTrain.addEventListener("click", () => {
+        let positionTrain = slidesTrain[0].offsetWidth;
+
         if (curSlideTrain === 0) {
           return;
         } else {
@@ -778,10 +789,11 @@
       const slide = document.querySelector(".slide-cooperate-main");
       const slides = document.querySelectorAll(".slide-cooperate");
       let curSlide = 0;
-      let position = slides[0].offsetWidth;
       const nextSlide = document.querySelector(".next-btn-coop");
       let maxSlide = slides.length - 1;
       nextSlide.addEventListener("click", function () {
+        let position = slides[0].offsetWidth;
+
         if (curSlide === maxSlide) {
           return;
         } else {
@@ -792,6 +804,8 @@
 
       const prevSlide = document.querySelector(".prev-btn-coop");
       prevSlide.addEventListener("click", function () {
+        let position = slides[0].offsetWidth;
+
         if (curSlide === 0) {
           return;
         } else {
@@ -804,14 +818,16 @@
       console.log(slideSharing);
       const slidesSharing = document.querySelectorAll(".slide-sharing");
       let curSlideSharing = 0;
-      let positionSharing = slidesSharing[0].offsetWidth;
       const nextSlideShar = document.querySelector(".next-btn-sharing");
       nextSlideShar.addEventListener("click", () => {
+        let positionSharing = slidesSharing[0].offsetWidth;
+
         if (curSlideSharing === slidesSharing.length - 3) {
           return;
         } else {
           curSlideSharing++;
         }
+        console.log(positionSharing);
         slideSharing.style.transform = `translateX(${
           -positionSharing * curSlideSharing
         }px)`;
@@ -819,6 +835,8 @@
 
       const prevSlideShar = document.querySelector(".prev-btn-sharing");
       prevSlideShar.addEventListener("click", () => {
+        let positionSharing = slidesSharing[0].offsetWidth;
+
         if (curSlideSharing === 0) {
           return;
         } else {
@@ -834,9 +852,10 @@
       const slidesGallery = document.querySelectorAll(".slide-gallery");
       console.log(slidesGallery.length);
       let curSlideGallery = 0;
-      let positionGallery = slidesGallery[0].offsetWidth;
       const nextBtnGallery = document.querySelector(".next-btn-gallery");
       nextBtnGallery.addEventListener("click", () => {
+        let positionGallery = slidesGallery[0].offsetWidth;
+
         if (curSlideGallery === slidesGallery.length - 1) {
           return;
         } else {
@@ -848,6 +867,8 @@
       });
       const prevBtnGallery = document.querySelector(".prev-btn-gallery");
       prevBtnGallery.addEventListener("click", () => {
+        let positionGallery = slidesGallery[0].offsetWidth;
+
         if (curSlideGallery === 0) {
           return;
         } else {
