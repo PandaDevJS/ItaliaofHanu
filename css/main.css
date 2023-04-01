@@ -370,6 +370,7 @@
   display: none;
   border-radius: 5px;
   overflow: hidden;
+  z-index: 5;
 }
 .menu-item-tablet {
   background-color: white;
