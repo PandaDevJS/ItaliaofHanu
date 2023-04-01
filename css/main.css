@@ -363,11 +363,13 @@
   border-radius: 5px;
 }
 .menu-lists-tablet {
-  width: 30%;
+  width: 40%;
   border: 1px solid #ccc;
   position: absolute;
   top: 60px;
   display: none;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .menu-item-tablet {
   background-color: white;
