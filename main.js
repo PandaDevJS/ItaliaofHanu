@@ -133,11 +133,11 @@ nextSlideShar.addEventListener("click", () => {
   let frameSize = slideSharing.offsetWidth;
   let positionSharing = slidesSharing[0].offsetWidth;
 
-  if (frameSize > 1024) {
+  if (frameSize > 1000) {
     nextStep = 3;
-  } else if (frameSize <= 1024 && frameSize > 768) {
+  } else if (frameSize <= 1000 && frameSize > 744) {
     nextStep = 2;
-  } else if (frameSize <= 768) {
+  } else if (frameSize <= 744) {
     nextStep = 1;
   }
 
