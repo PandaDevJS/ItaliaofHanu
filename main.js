@@ -56,7 +56,7 @@ prevSlideNews.addEventListener("click", function () {
 // Train - slide
 const slideTrain = document.querySelector(".slide-train-main");
 const slidesTrain = document.querySelectorAll(".slide-train");
-console.log(slidesTrain.length);
+
 let curSlideTrain = 0;
 const nextSlideTrain = document.querySelector(".next-btn-train");
 nextSlideTrain.addEventListener("click", () => {
@@ -124,15 +124,26 @@ prevSlide.addEventListener("click", function () {
 });
 // Sharing - slide
 const slideSharing = document.querySelector(".slide-sharing-main");
-console.log(slideSharing);
+
 const slidesSharing = document.querySelectorAll(".slide-sharing");
 let curSlideSharing = 0;
 const nextSlideShar = document.querySelector(".next-btn-sharing");
 nextSlideShar.addEventListener("click", () => {
+  let nextStep;
+  let frameSize = slideSharing.offsetWidth;
   let positionSharing = slidesSharing[0].offsetWidth;
+
+  if (frameSize > 1024) {
+    nextStep = 3;
+  } else if (frameSize <= 1024 && frameSize > 768) {
+    nextStep = 2;
+  } else if (frameSize <= 768) {
+    nextStep = 1;
+  }
+
   prevSlideShar.style.opacity = "1";
 
-  if (curSlideSharing === slidesSharing.length - 3) {
+  if (curSlideSharing === slidesSharing.length - nextStep) {
     nextSlideShar.style.opacity = "0.5";
 
     return;
