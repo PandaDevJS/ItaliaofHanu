@@ -6,7 +6,6 @@ let show = false;
 const showMenuTablet = () => {
   if (!show) {
     showMenu.style.display = "block";
-    s;
     show = true;
   } else {
     showMenu.style.display = "none";
