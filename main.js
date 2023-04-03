@@ -42,7 +42,6 @@ const prevSlideNews = document.querySelector(".prev-btn-news");
 prevSlideNews.addEventListener("click", function () {
   let positionNews = slidesNews[0].offsetWidth;
   nextSlideNews.style.opacity = "1";
-
   if (curSlideNews === 0) {
     prevSlideNews.style.opacity = "0.5";
 
